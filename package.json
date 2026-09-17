@@ -1,0 +1,42 @@
+{
+  "name": "supabase-nextjs-security",
+  "version": "1.0.0",
+  "description": "Security skill for AI coding agents working with Supabase + Next.js — enforces 10+ mandatory security controls based on real pentest findings",
+  "bin": {
+    "supabase-nextjs-security": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/cli.js"
+  },
+  "keywords": [
+    "supabase",
+    "nextjs",
+    "security",
+    "ai-agents",
+    "cursor",
+    "copilot",
+    "claude",
+    "chatgpt",
+    "csp",
+    "httponly",
+    "rls",
+    "oauth",
+    "pentest"
+  ],
+  "author": "Kunci-Tech",
+  "license": "MIT",
+  "homepage": "https://github.com/Kunci-Tech/security-skill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kunci-Tech/security-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kunci-Tech/security-skill/issues"
+  }
+}
