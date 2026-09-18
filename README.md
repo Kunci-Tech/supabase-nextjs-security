@@ -53,7 +53,7 @@ npx supabase-nextjs-security --check
 ### Clone the repo
 
 ```bash
-git clone git@github.com:Kunci-Tech/security-skill.git .agent-security
+git clone git@github.com:Kunci-Tech/supabase-nextjs-security.git .agent-security
 ```
 
 ---
@@ -79,6 +79,7 @@ git clone git@github.com:Kunci-Tech/security-skill.git .agent-security
 | `workbuddy` | `.workbuddy-ai/skills/security-guard/SKILL.md` | `npx supabase-nextjs-security --install workbuddy` |
 | `windsurf` | `.windsurfrules` | `npx supabase-nextjs-security --install windsurf` |
 | `continue` | `.continue/rules.md` | `npx supabase-nextjs-security --install continue` |
+| `antigravity` | `.agents/skills/agent-security/SKILL.md` | `npx supabase-nextjs-security --install antigravity` |
 | `chatgpt` | Outputs system prompt | `npx supabase-nextjs-security --install chatgpt` |
 | `all` | All of the above | `npx supabase-nextjs-security --install all` |
 
@@ -204,6 +205,19 @@ cp SKILL.md .continue/rules.md
 
 Continue reads `.continue/rules.md` as project-level instructions for its AI assistants.
 
+### Google Antigravity (Antigravity IDE & CLI)
+
+```bash
+# Option A: npx
+npx supabase-nextjs-security --install antigravity
+
+# Option B: manual
+mkdir -p .agents/skills/agent-security
+cp SKILL.md .agents/skills/agent-security/SKILL.md
+```
+
+Antigravity auto-discovers skills from `.agents/skills/<skill-name>/SKILL.md` and enforces constraints placed in `AGENTS.md` and `.agents/AGENTS.md`.
+
 ### Antigravity Browser Bridge
 
 If you use [Antigravity](https://github.com/Kunci-Tech/antigravity-browser-extension) (CDP-based browser bridge for authenticated testing), the security skill integrates with your authenticated audit workflow:
@@ -326,8 +340,8 @@ Found a gap? Suffered through a vulnerability this skill should have caught?
 ### Development
 
 ```bash
-git clone git@github.com:Kunci-Tech/security-skill.git
-cd security-skill
+git clone git@github.com:Kunci-Tech/supabase-nextjs-security.git
+cd supabase-nextjs-security
 
 # Test the CLI locally
 node bin/cli.js --check
