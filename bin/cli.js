@@ -33,10 +33,12 @@ ${BOLD}AGENTS${RESET}
   chatgpt       Output system prompt for ChatGPT Custom GPT
   windsurf      Copy to .windsurfrules
   continue      Copy to .continue/rules.md
+  antigravity   Copy to .agents/skills/agent-security/SKILL.md
   all           Install for all detected agents
 
 ${BOLD}EXAMPLES${RESET}
   npx supabase-nextjs-security --install cursor
+  npx supabase-nextjs-security --install antigravity
   npx supabase-nextjs-security --check
   npx supabase-nextjs-security --print | pbcopy
 
@@ -46,7 +48,7 @@ ${BOLD}OPTIONS${RESET}
   --check        Scan project for security vulnerabilities
   --version, -v  Show version
 
-${YELLOW}Source: https://github.com/Kunci-Tech/security-skill${RESET}
+${YELLOW}Source: https://github.com/Kunci-Tech/supabase-nextjs-security${RESET}
 `);
 }
 
@@ -59,6 +61,7 @@ function installForAgent(agent) {
     workbuddy: { path: '.workbuddy-ai/skills/security-guard/SKILL.md', label: 'WorkBuddy (.workbuddy-ai/skills/security-guard/SKILL.md)' },
     windsurf: { path: '.windsurfrules', label: 'Windsurf (.windsurfrules)' },
     continue: { path: '.continue/rules.md', label: 'Continue (.continue/rules.md)' },
+    antigravity: { path: '.agents/skills/agent-security/SKILL.md', label: 'Antigravity (.agents/skills/agent-security/SKILL.md)' },
   };
 
   if (agent === 'chatgpt') {
@@ -89,7 +92,7 @@ function installForAgent(agent) {
   const target = targets[agent];
   if (!target) {
     console.log(`${RED}Unknown agent: ${agent}${RESET}`);
-    console.log(`Available: cursor, claude, copilot, workbuddy, windsurf, continue, chatgpt, all\n`);
+    console.log(`Available: cursor, claude, copilot, workbuddy, windsurf, continue, antigravity, chatgpt, all\n`);
     process.exit(1);
   }
 

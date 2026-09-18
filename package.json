@@ -31,12 +31,12 @@
   ],
   "author": "Kunci-Tech",
   "license": "MIT",
-  "homepage": "https://github.com/Kunci-Tech/security-skill",
+  "homepage": "https://github.com/Kunci-Tech/supabase-nextjs-security",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kunci-Tech/security-skill.git"
+    "url": "git+https://github.com/Kunci-Tech/supabase-nextjs-security.git"
   },
   "bugs": {
-    "url": "https://github.com/Kunci-Tech/security-skill/issues"
+    "url": "https://github.com/Kunci-Tech/supabase-nextjs-security/issues"
   }
 }

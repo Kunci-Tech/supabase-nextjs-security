@@ -1,5 +1,8 @@
 ---
+name: agent-security
 title: "Supabase + Next.js Security Guard"
+description: >
+  Security skill for AI coding agents working with Supabase and Next.js — prevents common security mistakes before they ship: enforces Content-Security-Policy (CSP), HttpOnly on PKCE & auth cookies, stripping Google OAuth provider_token, API rate limiting, no unencrypted PII in localStorage, RLS verification, standard security headers (HSTS preload, X-Frame-Options, X-Content-Type-Options, Permissions-Policy), and security.txt. Use when writing or modifying authentication flows, Supabase client configuration, Next.js headers or middleware, API routes, or user sessions.
 summary: "Security skill for AI coding agents working with Supabase and Next.js — prevents common security mistakes before they ship"
 read_when:
   - Writing or modifying authentication flows
